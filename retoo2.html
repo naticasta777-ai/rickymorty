@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Buscador de personajes — Rick and Morty</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Buscador de personajes - Rick and Morty</title>
+  <link rel="stylesheet" href="assets/retoo2style.css" />
 </head>
 <body>
   <main class="app">
     <header class="header">
-      <h1>Buscador de personajes</h1>
+      <h1>Buscador de personajes Rick & Morty </h1>
     </header>
 
     <form class="filtros">
@@ -23,14 +23,22 @@
         <option value="">Todas las especies</option>
         <option value="Human">Humano</option>
         <option value="Alien">Alien</option>
+        <option value="Humanoid">Humanoide</option>
+        <option value="Robot">Robot</option>
       </select>
+      <button type="button" id="btn-limpiar">Limpiar filtros</button>
     </form>
 
+    <button id="btn-orden">Ordenar AZ</button>
+    <input type="checkbox" id="check-primeros10"><label for="check-primeros10">Primeros 10 personajes</label>
+
+
     <p id="contador"></p>
+    <p id="estadisticas"></p>
 
     <section id="resultados" class="personajes-grid"></section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="assets/retoo2js.js"></script>
 </body>
 </html>
