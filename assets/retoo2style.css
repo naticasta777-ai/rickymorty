@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
 }
 
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #10141d;
+  background: #01052ef6;
   color: #f4f6fb;
 }
 
@@ -15,21 +17,36 @@ body {
   padding: 24px;
 }
 
-.filtros {
+.filtros{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 16px 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.filtros input,
-.filtros select {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #333;
-  background: #172033;
-  color: inherit;
+.filtros :hover,#btn-orden:hover{
+  background: rgba(220, 220, 220, 0.589);
+  border-radius: 10px;
 }
+
+.filtros input, .filtros select{
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(151, 177, 217);
+  background: #f5f6f8;
+  color: #080808;
+  font-family: cursive;
+  font-size: 15px;
+  text-align: left;
+}
+
+#btn-limpiar, #btn-orden, #check-primeros10 {
+  border-radius: 10px;
+  font-family: cursive;
+}
+
 
 .personajes-grid {
     display: grid;
@@ -42,6 +59,14 @@ body {
     background: #172033;
     border-radius: 12px;
     overflow: hidden;
+    border: 2px solid #f2f2f2;
+    overflow: hidden;
+}
+
+.personaje-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(182, 240, 244, 0.6);
+  border-color: rgb(120, 239, 255);
 }
 
 .personaje-card img {
@@ -52,14 +77,46 @@ body {
 .personaje-card h3,
 .personaje-card p {
   margin: 8px 12px;
+  font-family: cursive;
+}
+
+.personaje-card p{
+  color:rgb(154, 207, 250);
 }
 
 .numero{
     position: absolute;
+    font-family: cursive;
     top: 8px;
     right: 8px;
-    background: rgba(0,0,0,0.6);
+    background: rgb(154, 207, 250);
     padding: 2px 8px;
     border-radius: 999px;
     font-size: 12px;
+    color:#172033
 }
+
+h1{
+  color:rgb(154, 207, 250);
+  font-size: 70px;
+  font-family:cursive ;
+  line-height: 0.5px;
+  text-shadow: 2px 2px 3px  #f4f6fb;
+  -webkit-text-stroke: 1px #172033;
+  text-align: center;
+}
+
+h2{
+  font-family:cursive ;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+
+p{
+  line-height: 10px;
+  color:rgb(154, 207, 250);
+  font-family: cursive;
+  text-align: center;
+}
+
